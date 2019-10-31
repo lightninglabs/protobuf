@@ -46,10 +46,6 @@ func main() {
 		newGoPkg: "google.golang.org/protobuf/types/descriptorpb",
 		pbDesc:   descriptorpb.File_google_protobuf_descriptor_proto,
 	}, {
-		oldGoPkg: "github.com/golang/protobuf/protoc-gen-go/plugin;plugin_go",
-		newGoPkg: "google.golang.org/protobuf/types/pluginpb",
-		pbDesc:   pluginpb.File_google_protobuf_compiler_plugin_proto,
-	}, {
 		oldGoPkg: "github.com/golang/protobuf/ptypes/any;any",
 		newGoPkg: "google.golang.org/protobuf/types/known/anypb",
 		pbDesc:   anypb.File_google_protobuf_any_proto,
