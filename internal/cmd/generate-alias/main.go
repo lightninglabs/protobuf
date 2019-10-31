@@ -16,7 +16,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/lightninglabs/protobuf-hex-display/proto"
 	gengo "google.golang.org/protobuf/cmd/protoc-gen-go/internal_gengo"
 	"google.golang.org/protobuf/compiler/protogen"
 	"google.golang.org/protobuf/reflect/protodesc"
@@ -42,31 +42,31 @@ func main() {
 		newGoPkg string
 		pbDesc   protoreflect.FileDescriptor
 	}{{
-		oldGoPkg: "github.com/golang/protobuf/protoc-gen-go/descriptor;descriptor",
+		oldGoPkg: "github.com/lightninglabs/protobuf-hex-display/protoc-gen-go/descriptor;descriptor",
 		newGoPkg: "google.golang.org/protobuf/types/descriptorpb",
 		pbDesc:   descriptorpb.File_google_protobuf_descriptor_proto,
 	}, {
-		oldGoPkg: "github.com/golang/protobuf/ptypes/any;any",
+		oldGoPkg: "github.com/lightninglabs/protobuf-hex-display/ptypes/any;any",
 		newGoPkg: "google.golang.org/protobuf/types/known/anypb",
 		pbDesc:   anypb.File_google_protobuf_any_proto,
 	}, {
-		oldGoPkg: "github.com/golang/protobuf/ptypes/duration;duration",
+		oldGoPkg: "github.com/lightninglabs/protobuf-hex-display/ptypes/duration;duration",
 		newGoPkg: "google.golang.org/protobuf/types/known/durationpb",
 		pbDesc:   durationpb.File_google_protobuf_duration_proto,
 	}, {
-		oldGoPkg: "github.com/golang/protobuf/ptypes/timestamp;timestamp",
+		oldGoPkg: "github.com/lightninglabs/protobuf-hex-display/ptypes/timestamp;timestamp",
 		newGoPkg: "google.golang.org/protobuf/types/known/timestamppb",
 		pbDesc:   timestamppb.File_google_protobuf_timestamp_proto,
 	}, {
-		oldGoPkg: "github.com/golang/protobuf/ptypes/wrappers;wrappers",
+		oldGoPkg: "github.com/lightninglabs/protobuf-hex-display/ptypes/wrappers;wrappers",
 		newGoPkg: "google.golang.org/protobuf/types/known/wrapperspb",
 		pbDesc:   wrapperspb.File_google_protobuf_wrappers_proto,
 	}, {
-		oldGoPkg: "github.com/golang/protobuf/ptypes/struct;structpb",
+		oldGoPkg: "github.com/lightninglabs/protobuf-hex-display/ptypes/struct;structpb",
 		newGoPkg: "google.golang.org/protobuf/types/known/structpb",
 		pbDesc:   structpb.File_google_protobuf_struct_proto,
 	}, {
-		oldGoPkg: "github.com/golang/protobuf/ptypes/empty;empty",
+		oldGoPkg: "github.com/lightninglabs/protobuf-hex-display/ptypes/empty;empty",
 		newGoPkg: "google.golang.org/protobuf/types/known/emptypb",
 		pbDesc:   emptypb.File_google_protobuf_empty_proto,
 	}}
@@ -105,7 +105,7 @@ func main() {
 		panic("gengo error: " + resp.GetError())
 	}
 	for _, file := range resp.File {
-		relPath, err := filepath.Rel(filepath.FromSlash("github.com/golang/protobuf"), file.GetName())
+		relPath, err := filepath.Rel(filepath.FromSlash("github.com/lightninglabs/protobuf-hex-display"), file.GetName())
 		check(err)
 
 		check(ioutil.WriteFile(relPath+".bak", []byte(file.GetContent()), 0664))

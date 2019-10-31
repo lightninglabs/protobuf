@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"time"
 
-	durationpb "github.com/golang/protobuf/ptypes/duration"
+	durationpb "github.com/lightninglabs/protobuf-hex-display/ptypes/duration"
 )
 
 // Range of google.protobuf.Duration as specified in duration.proto.

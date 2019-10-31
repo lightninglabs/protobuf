@@ -19,12 +19,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/lightninglabs/protobuf-hex-display/proto"
 	"google.golang.org/protobuf/testing/protopack"
 
-	pb2 "github.com/golang/protobuf/internal/testprotos/proto2_proto"
-	pb3 "github.com/golang/protobuf/internal/testprotos/proto3_proto"
-	tspb "github.com/golang/protobuf/ptypes/timestamp"
+	pb2 "github.com/lightninglabs/protobuf-hex-display/internal/testprotos/proto2_proto"
+	pb3 "github.com/lightninglabs/protobuf-hex-display/internal/testprotos/proto3_proto"
+	tspb "github.com/lightninglabs/protobuf-hex-display/ptypes/timestamp"
 )
 
 func initGoTestField() *pb2.GoTestField {
@@ -2056,7 +2056,7 @@ func TestOneofNilBytes(t *testing.T) {
 }
 
 func TestInefficientPackedBool(t *testing.T) {
-	// https://github.com/golang/protobuf/issues/76
+	// https://github.com/lightninglabs/protobuf-hex-display/issues/76
 	inp := protopack.Message{
 		protopack.Tag{2, protopack.BytesType}, protopack.Bytes("\xb90"),
 	}.Marshal()

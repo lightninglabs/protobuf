@@ -12,12 +12,12 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/golang/protobuf/proto"
 	"github.com/google/go-cmp/cmp"
+	"github.com/lightninglabs/protobuf-hex-display/proto"
 
-	pb2 "github.com/golang/protobuf/internal/testprotos/proto2_proto"
-	pb3 "github.com/golang/protobuf/internal/testprotos/proto3_proto"
-	anypb "github.com/golang/protobuf/ptypes/any"
+	pb2 "github.com/lightninglabs/protobuf-hex-display/internal/testprotos/proto2_proto"
+	pb3 "github.com/lightninglabs/protobuf-hex-display/internal/testprotos/proto3_proto"
+	anypb "github.com/lightninglabs/protobuf-hex-display/ptypes/any"
 )
 
 var (

@@ -8,10 +8,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/lightninglabs/protobuf-hex-display/proto"
 
-	descriptorpb "github.com/golang/protobuf/protoc-gen-go/descriptor"
-	anypb "github.com/golang/protobuf/ptypes/any"
+	descriptorpb "github.com/lightninglabs/protobuf-hex-display/protoc-gen-go/descriptor"
+	anypb "github.com/lightninglabs/protobuf-hex-display/ptypes/any"
 )
 
 func TestMarshalUnmarshal(t *testing.T) {

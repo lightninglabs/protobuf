@@ -14,17 +14,17 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/golang/protobuf/proto"
-	"github.com/golang/protobuf/ptypes"
+	"github.com/lightninglabs/protobuf-hex-display/proto"
+	"github.com/lightninglabs/protobuf-hex-display/ptypes"
 
-	pb2 "github.com/golang/protobuf/internal/testprotos/jsonpb_proto"
-	pb3 "github.com/golang/protobuf/internal/testprotos/proto3_proto"
-	descpb "github.com/golang/protobuf/protoc-gen-go/descriptor"
-	anypb "github.com/golang/protobuf/ptypes/any"
-	durpb "github.com/golang/protobuf/ptypes/duration"
-	stpb "github.com/golang/protobuf/ptypes/struct"
-	tspb "github.com/golang/protobuf/ptypes/timestamp"
-	wpb "github.com/golang/protobuf/ptypes/wrappers"
+	pb2 "github.com/lightninglabs/protobuf-hex-display/internal/testprotos/jsonpb_proto"
+	pb3 "github.com/lightninglabs/protobuf-hex-display/internal/testprotos/proto3_proto"
+	descpb "github.com/lightninglabs/protobuf-hex-display/protoc-gen-go/descriptor"
+	anypb "github.com/lightninglabs/protobuf-hex-display/ptypes/any"
+	durpb "github.com/lightninglabs/protobuf-hex-display/ptypes/duration"
+	stpb "github.com/lightninglabs/protobuf-hex-display/ptypes/struct"
+	tspb "github.com/lightninglabs/protobuf-hex-display/ptypes/timestamp"
+	wpb "github.com/lightninglabs/protobuf-hex-display/ptypes/wrappers"
 )
 
 var (
