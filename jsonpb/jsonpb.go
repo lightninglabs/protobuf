@@ -301,6 +301,11 @@ func (m *Marshaler) marshalObject(out *errWriter, v proto.Message, indent, typeU
 			continue
 		}
 
+		// Ignore unexported fields.
+		if valueField.PkgPath != "" {
+			continue
+		}
+
 		// IsNil will panic on most value kinds.
 		switch value.Kind() {
 		case reflect.Chan, reflect.Func, reflect.Interface:
