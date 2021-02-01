@@ -8,11 +8,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/lightninglabs/protobuf-hex-display/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"google.golang.org/protobuf/reflect/protoregistry"
 
-	anypb "github.com/golang/protobuf/ptypes/any"
+	anypb "github.com/lightninglabs/protobuf-hex-display/ptypes/any"
 )
 
 const urlPrefix = "type.googleapis.com/"

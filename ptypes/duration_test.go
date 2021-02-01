@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/lightninglabs/protobuf-hex-display/proto"
 
-	durpb "github.com/golang/protobuf/ptypes/duration"
+	durpb "github.com/lightninglabs/protobuf-hex-display/ptypes/duration"
 )
 
 const (

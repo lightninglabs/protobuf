@@ -13,9 +13,9 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/lightninglabs/protobuf-hex-display/proto"
 
-	pb2 "github.com/golang/protobuf/internal/testprotos/proto2_proto"
+	pb2 "github.com/lightninglabs/protobuf-hex-display/internal/testprotos/proto2_proto"
 )
 
 func TestGetExtensionsWithMissingExtensions(t *testing.T) {

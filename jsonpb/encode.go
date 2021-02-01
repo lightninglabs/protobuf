@@ -5,7 +5,6 @@
 package jsonpb
 
 import (
-	"encoding/json"
 	"errors"
 	"fmt"
 	"io"
@@ -16,11 +15,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/golang/protobuf/proto"
+	"github.com/lightninglabs/protobuf-hex-display/proto"
 	"google.golang.org/protobuf/encoding/protojson"
 	protoV2 "google.golang.org/protobuf/proto"
 	"google.golang.org/protobuf/reflect/protoreflect"
 	"google.golang.org/protobuf/reflect/protoregistry"
+
+	"github.com/lightninglabs/protobuf-hex-display/json"
 )
 
 const wrapJSONMarshalV2 = false
